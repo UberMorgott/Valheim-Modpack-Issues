@@ -1,0 +1,12 @@
+name: Предложить идею / Suggest an idea
+description: Чего не хватает, что улучшить или добавить. / What is missing, what to improve or add.
+title: "[Идея] "
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Ваша идея / Your idea
+      description: Опишите, что и зачем. Название задачи можно поправить в заголовке выше. / Describe what and why; edit the title above.
+    validations:
+      required: true

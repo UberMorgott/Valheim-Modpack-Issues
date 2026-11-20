@@ -1,0 +1,80 @@
+name: Сообщить об ошибке / Report a bug
+description: Что-то сломалось, вылетает или работает не так. / Something is broken, crashes or works wrong.
+title: "[Ошибка] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что сообщаете! Заполните поля ниже, чем подробнее, тем быстрее починим.
+        *Thanks for reporting! English is fine too.*
+  - type: textarea
+    id: did
+    attributes:
+      label: Что вы делали / What you were doing
+      description: Где были и чем занимались. биом, босс, крафт, вход на сервер…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги, как повторить / Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что ожидали / Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что получилось / What happened
+      description: Текст ошибки, вылет, зависание, что выглядит не так. / Error text, crash, freeze.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Когда это было / When
+      description: Дата и время, с часовым поясом. / Date and time with time zone.
+      placeholder: "2026-11-21 20:30 МСК"
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Как вы подключаетесь / How you play
+      options:
+        - Друзья (код друзей) / Friends code
+        - Стрим (код для зрителей) / Stream viewer code
+        - Не знаю / Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи / Logs
+      description: |
+        Перетащите файлы логов в это поле (или нажмите на поле и вставьте). Логи перезаписываются при каждом запуске игры: приложите их сразу после ошибки. Если игра уже перезапущена, приложите `Player-prev.log` вместо `Player.log`.
+        **Папка игры:** Steam → Библиотека → правый клик по Valheim → Управление → Просмотреть локальные файлы (обычно `C:\Program Files (x86)\Steam\steamapps\common\Valheim`).
+        - `<папка игры>\BepInEx\LogOutput.log`: лог модов, самый важный
+        - `%USERPROFILE%\AppData\LocalLow\IronGate\Valheim\Player.log`: лог игры. Вставьте путь в адресную строку Проводника и нажмите Enter
+        - `<папка игры>\.modupdater\exit.log`: лог обновлятора модов, если проблема при запуске или обновлении
+
+        *Drag the log files into this field. Game folder: Steam → right-click Valheim → Manage → Browse local files.*
+      placeholder: Перетащите сюда LogOutput.log и Player.log / Drop log files here
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты / Screenshots
+      description: Необязательно. Перетащите картинки в поле. / Optional, drag images here.
+    validations:
+      required: false

@@ -1,8 +1,8 @@
 # Valheim modpack issues
 
-Bug reports and ideas from players of the Morgott Valheim modpack.
+Bug reports and ideas from players of the Morgott Valheim modpack. No code here.
 
-Issues labelled `from-site` are created automatically from the form on the landing
-(https://morgott.duckdns.org:9443/valheim/, button "Сообщить о проблеме / Предложить идею");
-players do not need a GitHub account. Sender service: `Yggdrasil/backend/cmd/feedback`.
-Attachments (logs, screenshots) are stored on the VPS and linked from the issue by unguessable URLs.
+- [Сообщить об ошибке / Report a bug](https://github.com/UberMorgott/Valheim-Modpack-Issues/issues/new?template=bug.yml)
+- [Предложить идею / Suggest an idea](https://github.com/UberMorgott/Valheim-Modpack-Issues/issues/new?template=idea.yml)
+
+Modpack site: https://morgott.duckdns.org:9443/valheim/

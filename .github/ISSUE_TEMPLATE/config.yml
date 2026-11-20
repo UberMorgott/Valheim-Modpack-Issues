@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Сайт сборки / Modpack site
+    url: https://morgott.duckdns.org:9443/valheim/
+    about: Описание сборки и как подключиться. / Modpack overview and how to join.
