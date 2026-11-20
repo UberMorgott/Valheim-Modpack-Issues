@@ -12,7 +12,7 @@ body:
     id: did
     attributes:
       label: Что вы делали / What you were doing
-      description: Где были и чем занимались. биом, босс, крафт, вход на сервер…
+      description: Где были и чем занимались: биом, босс, крафт, вход на сервер…
     validations:
       required: true
   - type: textarea
