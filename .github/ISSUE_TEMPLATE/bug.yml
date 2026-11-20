@@ -65,7 +65,7 @@ body:
         **Папка игры:** Steam → Библиотека → правый клик по Valheim → Управление → Просмотреть локальные файлы (обычно `C:\Program Files (x86)\Steam\steamapps\common\Valheim`).
         - `<папка игры>\BepInEx\LogOutput.log`: лог модов, самый важный
         - `%USERPROFILE%\AppData\LocalLow\IronGate\Valheim\Player.log`: лог игры. Вставьте путь в адресную строку Проводника и нажмите Enter
-        - `<папка игры>\.modupdater\exit.log`: лог обновлятора модов, если проблема при запуске или обновлении
+        - `<папка игры>\.modupdater\exit.log` и `<папка игры>\.modupdater\updater.log`: логи установщика модов (uar.exe), если проблема при запуске или обновлении
 
         *Drag the log files into this field. Game folder: Steam → right-click Valheim → Manage → Browse local files.*
       placeholder: Перетащите сюда LogOutput.log и Player.log / Drop log files here
